@@ -1,0 +1,37 @@
+# To# Dependabot Configuration
+
+This document explains the Dependabot configuration used in the Indeed Scraper project to automate dependency updates and ensure security.
+
+## Overview
+
+The Indeed Scraper project uses GitHub's Dependabot to:
+- Automatically check for outdated or insecure dependencies
+- Create pull requests to update dependencies
+- Maintain project security and keep dependencies current
+
+## Configuration File
+
+The configuration is stored in `.github/dependabot.yml`. Below is an explanation of the configuration used in this project:
+
+```yaml
+version: 2
+updates:
+  # Python packages
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "UTC"
+    open-pull-request get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
